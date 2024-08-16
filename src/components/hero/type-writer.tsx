@@ -1,14 +1,19 @@
+"use client";
+
 import Typewriter from "typewriter-effect";
 
-export default function TypeWriterComponent() {
+export default function TypeWriterComponent({
+  displayText,
+}: {
+  displayText: string[];
+}) {
   return (
     <Typewriter
       options={{
-        strings: ["Pattaradanai", "FullStack Developer", "Mentor"],
+        strings: displayText,
         autoStart: true,
         loop: true,
-        // wrapperClassName: "text-secondary",
-        delay: 150
+        delay: 150,
       }}
     />
   );

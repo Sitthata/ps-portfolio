@@ -15,10 +15,14 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "980px",
+        "2xl": "1200px",
       },
     },
     extend: {
+      backgroundImage: {
+        "kanban-bg": "url('/kanban-board.png')",
+        "dictionary-app": "url('/dictionary-app.png')",
+      },
       fontFamily: {
         sans: ["var(--font-kanit)", ...fontFamily.sans],
         jetbrain: ["JetBrains Mono", ...fontFamily.mono],
