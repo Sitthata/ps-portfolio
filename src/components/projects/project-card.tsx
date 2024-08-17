@@ -16,7 +16,7 @@ import BadgeList from './badge-list'
 type ProjectCardProps = {
     title: string
     imgSrc: string
-    description?: string
+    badges: string[]
 }
 
 gsap.registerPlugin(useGSAP)

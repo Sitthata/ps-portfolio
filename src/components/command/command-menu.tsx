@@ -7,7 +7,7 @@ import {
     CommandItem,
     CommandList,
 } from '@/components/ui/command'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 export default function CommandMenu({
     open,
