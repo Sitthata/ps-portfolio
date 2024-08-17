@@ -1,10 +1,10 @@
 'use client'
 
-import { CardData } from '@/types/type'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { useRef } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { CardData } from '@/types/type'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
