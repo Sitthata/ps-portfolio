@@ -2,19 +2,7 @@ import VideoPlayer from './video-player'
 import ProjectCard from './project-card'
 import { Button } from '../ui/button'
 import { FaArrowRight } from 'react-icons/fa'
-
-const projectsData = [
-    {
-        title: 'Kanban Board Fullstack',
-        imgSrc: 'bg-kanban-bg',
-        badges: ['Vue.js', 'Spring Boot', 'MySQL'],
-    },
-    {
-        title: 'Dictionary App',
-        imgSrc: 'bg-dictionary-app',
-        badges: ['React', 'Tailwind', 'Dictionary API'],
-    },
-]
+import { projectsData } from './data'
 
 export default function Projects() {
     return (
@@ -29,7 +17,10 @@ export default function Projects() {
                 </div>
             </div>
             <div className="flex justify-end">
-                <Button className="text-xl space-x-3 p-2 hover:bg-secondary hover:text-accent" variant={'outline'}>
+                <Button
+                    className="text-xl space-x-3 p-2 hover:bg-secondary hover:text-accent"
+                    variant={'outline'}
+                >
                     <span>View More</span> <FaArrowRight />
                 </Button>
             </div>
