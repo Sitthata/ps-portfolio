@@ -1,11 +1,4 @@
 'use client'
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-} from '@/components/ui/tooltip'
-import { Button, buttonVariants } from '../ui/button'
 import { MdOutlineArrowOutward } from 'react-icons/md'
 import { cn } from '@/lib/utils'
 import { useRef } from 'react'
