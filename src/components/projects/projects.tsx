@@ -1,8 +1,9 @@
 import VideoPlayer from './video-player'
-import ProjectCard from './project-card'
 import { Button } from '../ui/button'
 import { FaArrowRight } from 'react-icons/fa'
 import { projectsData } from './data'
+import dynamic from 'next/dynamic'
+const ProjectCard = dynamic(() => import('./project-card'), { ssr: false })
 
 export default function Projects() {
     return (
