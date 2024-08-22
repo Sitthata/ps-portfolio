@@ -12,7 +12,8 @@ const experiences = [
     title: "IT Starter Pack #30 - Web Technology Teacher",
     description:
       "Taught fundamental web development concepts, including HTML, CSS, and JavaScript, to university freshmen. Guided students in building projects using modern frameworks like React and Vue.",
-  }
+  },
+
 ];
 const content = [
   {

@@ -64,7 +64,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[35rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md md:no-scrollbar"
+      className="h-[35rem] overflow-y-auto flex justify-around relative space-x-10 rounded-md md:no-scrollbar"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
@@ -101,7 +101,7 @@ export const StickyScroll = ({
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "hidden md:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden",
+          "hidden md:block h-60 w-[25rem] rounded-md bg-white sticky top-10 overflow-hidden",
           contentClassName
         )}
       >
