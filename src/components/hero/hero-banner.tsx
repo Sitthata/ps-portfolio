@@ -9,7 +9,12 @@ export default function HeroBanner() {
         <span className="font-semibold opacity-100 text-3xl">Hi, I&#39;m</span>
         <span className="text-4xl font-bold text-secondary">
           <TypeWriterComponent
-            displayText={["Pattaradanai", "FullStack Developer", "Mentor"]}
+            displayText={[
+              "Pattaradanai Srichon",
+              "Fullstack Developer",
+              "Aspiring Mentor",
+              "IT Student with a Passion",
+            ]}
           />
         </span>
         <p className="opacity-85 text-lg">

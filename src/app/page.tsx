@@ -1,3 +1,4 @@
+import AboutMe from "@/components/about-me/about-me";
 import HeroBanner from "@/components/hero/hero-banner";
 import Navbar from "@/components/navigation/navbar";
 import Projects from "@/components/projects/projects";
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <HeroBanner />
       <SkillSection />
+      <AboutMe />
       <Projects />
     </main>
   );

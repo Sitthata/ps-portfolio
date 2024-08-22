@@ -11,14 +11,14 @@ import { cn } from "@/lib/utils";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Overlay from "./overlay";
+import { useCardAnimation } from "./hooks/use-card-animation";
 
 type ProjectCardProps = {
   title: string;
   imgSrc: string;
   description: string;
 };
-
-gsap.registerPlugin(useGSAP);
 
 export default function ProjectCard({
   imgSrc,
@@ -29,34 +29,7 @@ export default function ProjectCard({
   const contentRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
 
-  useGSAP(() => {
-    const card = cardRef.current;
-    const content = contentRef.current;
-    const overlay = overlayRef.current;
-    const timeline = gsap.timeline({ paused: true });
-
-    timeline.to(overlay, {
-      opacity: 0.8,
-      ease: "power3",
-    });
-
-    timeline.fromTo(
-      content,
-      {
-        y: 20,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.3,
-        ease: "power2.out",
-      }
-    );
-
-    card?.addEventListener("mouseenter", () => timeline.play());
-    card?.addEventListener("mouseleave", () => timeline.reverse());
-  }, [cardRef, contentRef, overlayRef]);
+  useCardAnimation(cardRef, contentRef, overlayRef);
 
   return (
     <div
@@ -86,10 +59,7 @@ export default function ProjectCard({
           quis.
         </p>
       </div>
-      <div
-        ref={overlayRef}
-        className="absolute inset-0 bg-black opacity-0 pointer-events-none"
-      />
+      <Overlay overlayRef={overlayRef} />
     </div>
   );
 }
