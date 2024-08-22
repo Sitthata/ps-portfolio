@@ -1,6 +1,5 @@
-import { IconType } from "react-icons/lib";
 
-type CardData = {
-  icon: React.ReactNode;
-  title: string;
-};
+export type CardData = {
+    title: string
+    icon: JSX.Element
+}

@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils";
-import { Button } from "../ui/button";
-import TypeWriterComponent from "./type-writer";
+import { cn } from '@/lib/utils'
+import { Button } from '../ui/button'
+import TypeWriterComponent from './type-writer'
 
 export default function HeroBanner() {
   return (

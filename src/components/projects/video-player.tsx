@@ -1,13 +1,13 @@
 "use client";
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { Button } from "../ui/button";
-import { IoIosInformationCircleOutline } from "react-icons/io";
-import { MdOutlineArrowOutward } from "react-icons/md";
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from '@/components/ui/tooltip'
+import { Button } from '../ui/button'
+import { IoIosInformationCircleOutline } from 'react-icons/io'
+import { MdOutlineArrowOutward } from 'react-icons/md'
 
 export default function VideoPlayer() {
   return (
