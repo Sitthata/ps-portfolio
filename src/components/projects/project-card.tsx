@@ -12,12 +12,13 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import BadgeList from './badge-list'
-import { useCardAnimation } from "./hooks/use-card-animation";
+import { useCardAnimation } from './hooks/use-card-animation'
 
 type ProjectCardProps = {
     title: string
     imgSrc: string
     badges: string[]
+    description: string
 }
 
 gsap.registerPlugin(useGSAP)
@@ -25,13 +26,14 @@ gsap.registerPlugin(useGSAP)
 export default function ProjectCard({
     imgSrc,
     title,
-    badges
+    badges,
+    description,
 }: ProjectCardProps) {
     const cardRef = useRef<HTMLDivElement>(null)
     const contentRef = useRef<HTMLDivElement>(null)
     const overlayRef = useRef<HTMLDivElement>(null)
 
-  useCardAnimation(cardRef, contentRef, overlayRef);
+    useCardAnimation(cardRef, contentRef, overlayRef)
 
     return (
         <div
@@ -54,12 +56,13 @@ export default function ProjectCard({
                     </TooltipTrigger>
                     <TooltipContent align="center" side="left">
                         <p>View Live</p>
-                    </TooltipContent>
+                </TooltipContent>
                 </Tooltip>
             </TooltipProvider>
             <div className="z-50 space-y-2" ref={contentRef}>
                 <h1 className="text-lg md:text-2xl">{title}</h1>
                 <BadgeList badges={badges} />
+                <p className="text-sm md:text-base">{description}</p>
             </div>
             <div
                 ref={overlayRef}
