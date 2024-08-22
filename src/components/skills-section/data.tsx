@@ -1,6 +1,6 @@
 import { RiNextjsLine, RiTailwindCssFill } from 'react-icons/ri'
 import { SiExpress, SiSpringboot } from 'react-icons/si'
-import { BsFiletypeSql } from 'react-icons/bs'
+import { DiMysql } from "react-icons/di";
 import { FaDocker, FaGithub, FaLinux, FaReact, FaVuejs } from 'react-icons/fa'
 import { CardData } from '@/types/type'
 
@@ -32,7 +32,7 @@ export const cardData: CardData[] = [
     },
     {
         title: 'SQL',
-        icon: <BsFiletypeSql />,
+        icon: <DiMysql />,
         tipContent: 'Structured Query Language for managing databases',
     },
     {
