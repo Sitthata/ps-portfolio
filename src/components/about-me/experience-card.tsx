@@ -1,4 +1,4 @@
-export default function ExperienceCard({
+export default function AboutCard({
   title,
   description,
 }: {

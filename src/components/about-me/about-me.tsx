@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { StickyScroll } from "../scroll-section/sticky-scroll-reveal";
-import ExperienceCard from "./experience-card";
+import AboutCard from "./experience-card";
 
 const experiences = [
   {
@@ -13,7 +13,16 @@ const experiences = [
     description:
       "Taught fundamental web development concepts, including HTML, CSS, and JavaScript, to university freshmen. Guided students in building projects using modern frameworks like React and Vue.",
   },
-
+];
+const educations = [
+  {
+    title: "King Mongkut’s University of Technology Thonburi",
+    description: "Bachelor of Science in Information Technology",
+  },
+  {
+    title: "Assumption College",
+    description: "High School Diploma in Math-Science-Technology",
+  },
 ];
 const content = [
   {
@@ -34,20 +43,13 @@ const content = [
     title: "Education",
     description: (
       <div className="flex flex-col gap-4">
-        <div>
-          <h2 className="font-bold">
-            King Mongkut’s University of Technology Thonburi
-          </h2>
-          <h3 className="text-sm">
-            Bachelor of Science in Information Technology
-          </h3>
-        </div>
-        <div>
-          <h2 className="font-bold">Assumption College</h2>
-          <h3 className="text-sm">
-            High School Diploma in Math-Science-Technology
-          </h3>
-        </div>
+        {educations.map((experience, index) => (
+          <AboutCard
+            key={experience.title + index}
+            title={experience.title}
+            description={experience.description}
+          />
+        ))}
       </div>
     ),
     content: (
@@ -61,7 +63,7 @@ const content = [
     description: (
       <div className="flex flex-col gap-5">
         {experiences.map((experience, index) => (
-          <ExperienceCard
+          <AboutCard
             key={experience.title + index}
             title={experience.title}
             description={experience.description}
