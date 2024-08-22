@@ -25,6 +25,8 @@ const config = {
       backgroundImage: {
         "kanban-bg": "url('/kanban-board.png')",
         "dictionary-app": "url('/dictionary-app.png')",
+        "markdown-app": "url('/markdown-parser-app.png')",
+        "hello-goose-app": "url('/hello-goose-app.png')",
       },
       fontFamily: {
         sans: ["var(--font-kanit)", ...fontFamily.sans],
