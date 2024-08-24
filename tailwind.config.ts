@@ -27,6 +27,7 @@ const config = {
         "dictionary-app": "url('/dictionary-app.png')",
         "markdown-app": "url('/markdown-parser-app.png')",
         "hello-goose-app": "url('/hello-goose-app.png')",
+        "planet-side-app": "url('/planet-side-app.png')",
       },
       fontFamily: {
         sans: ["var(--font-kanit)", ...fontFamily.sans],

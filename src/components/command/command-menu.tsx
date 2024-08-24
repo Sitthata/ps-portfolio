@@ -32,10 +32,14 @@ export default function CommandMenu({
             <CommandInput placeholder="Type a command or search..." />
             <CommandList>
                 <CommandEmpty>No results found.</CommandEmpty>
-                <CommandGroup heading="Suggestions">
-                    <CommandItem>Calendar</CommandItem>
-                    <CommandItem>Search Emoji</CommandItem>
-                    <CommandItem>Calculator</CommandItem>
+                <CommandGroup heading="Navigation">
+                    <CommandItem>Home</CommandItem>
+                    <CommandItem>About Me</CommandItem>
+                    <CommandItem>Projects</CommandItem>
+                </CommandGroup>
+                <CommandGroup heading="Links">
+                    <CommandItem>linkedin</CommandItem>
+                    <CommandItem>github</CommandItem>
                 </CommandGroup>
             </CommandList>
         </CommandDialog>

@@ -3,6 +3,7 @@ import './globals.css'
 import { jetbrain } from '@/fonts'
 import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/components/theme-provider'
+import Navbar from '@/components/navigation/navbar'
 
 export const metadata: Metadata = {
     title: 'PS Portfolio',
@@ -28,6 +29,7 @@ export default function RootLayout({
                     enableSystem
                     disableTransitionOnChange
                 >
+                    <Navbar />
                     {children}
                 </ThemeProvider>
             </body>

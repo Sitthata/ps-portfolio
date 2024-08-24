@@ -1,5 +1,14 @@
 export const projectsData = [
     {
+        title: 'Planet Side Info App',
+        imgSrc: 'bg-planet-side-app',
+        badges: ['React', 'Tailwind', 'Framer Motion'],
+        description:
+            'A landing page with interactive draggable hero banner for Planet Side Project, built with React, Tailwind CSS, and Framer Motion.',
+        githubLink:
+            'https://github.com/Sitthata/kanban-board-integrated-frontend',
+    },
+    {
         title: 'Kanban Board Fullstack',
         imgSrc: 'bg-kanban-bg',
         badges: ['Vue.js', 'Spring Boot', 'MySQL', 'Docker', 'JWT'],
@@ -18,7 +27,7 @@ export const projectsData = [
             'https://github.com/Sitthata/dictonary-web-app_react_tailwind',
     },
     {
-        title: 'Markdown Parser App',
+        title: 'Markable',
         imgSrc: 'bg-markdown-app',
         badges: ['Vue', 'Tailwind'],
         description:

@@ -1,3 +1,5 @@
+'use client'
+
 import VideoPlayer from './video-player'
 import { Button } from '../ui/button'
 import { FaArrowRight } from 'react-icons/fa'
@@ -10,10 +12,10 @@ export default function Projects() {
         <div className="space-y-4">
             <h2 className="font-bold text-3xl text-secondary">Projects</h2>
             <div className="grid gap-4">
-                <VideoPlayer />
+                <VideoPlayer customClass="hidden md:block" />
                 <div className="grid md:grid-cols-2 gap-4">
                     {projectsData.map((project, index) => (
-                        <ProjectCard key={index} {...project} />
+                        <ProjectCard key={index} index={index} {...project} />
                     ))}
                 </div>
             </div>

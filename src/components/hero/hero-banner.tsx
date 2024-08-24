@@ -24,7 +24,7 @@ export default function HeroBanner() {
         </p>
       </h1>
       <Button>About Me</Button>
-      <Button variant="link">Download my CV</Button>
+      <Button variant="link">Download my Resume</Button>
     </div>
   );
 }
