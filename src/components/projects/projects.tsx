@@ -9,7 +9,7 @@ const ProjectCard = dynamic(() => import('./project-card'), { ssr: false })
 
 export default function Projects() {
     return (
-        <div className="space-y-4">
+        <div className="space-y-4" id="projects">
             <h2 className="font-bold text-3xl text-secondary">Projects</h2>
             <div className="grid gap-4">
                 <VideoPlayer customClass="hidden md:block" />

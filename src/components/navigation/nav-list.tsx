@@ -13,7 +13,7 @@ export default function NavList({ children }: { children?: React.ReactNode }) {
             <Button
                 variant={'outline'}
                 size={'icon'}
-                onClick={() => setOpen(!open)}
+                onClick={() => setOpen((prev) => !prev)}
             >
                 <FiCommand fontSize={17} />
             </Button>

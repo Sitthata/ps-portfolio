@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { jetbrain } from '@/fonts'
 import { cn } from '@/lib/utils'
-import { ThemeProvider } from '@/components/theme-provider'
 import Navbar from '@/components/navigation/navbar'
+import { Providers } from '@/providers'
 
 export const metadata: Metadata = {
     title: 'PS Portfolio',
@@ -23,15 +23,10 @@ export default function RootLayout({
                     jetbrain.className
                 )}
             >
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="dark"
-                    enableSystem={false}
-                    disableTransitionOnChange
-                >
+                <Providers>
                     <Navbar />
                     {children}
-                </ThemeProvider>
+                </Providers>
             </body>
         </html>
     )

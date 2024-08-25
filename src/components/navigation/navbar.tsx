@@ -44,7 +44,7 @@ export default function Navbar() {
 
     return (
         <motion.nav
-            className="sticky top-0 p-5 z-50 bg-background backdrop-blur-sm"
+            className="sticky top-0 p-5 bg-background backdrop-blur-sm z-10"
             style={{ backdropFilter: blur }}
             variants={variants}
             initial="hidden"

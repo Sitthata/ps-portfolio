@@ -3,7 +3,7 @@ import { content } from './data'
 
 export default function AboutMe() {
     return (
-        <div className="">
+        <div id="about-me">
             <StickyScroll content={content} />
         </div>
     )

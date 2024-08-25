@@ -52,7 +52,7 @@ export default function ProjectCard({
                 )}
                 ref={cardRef}
             >
-                <div className="space-x-2 z-20">
+                <div className="space-x-2">
                     <CustomToolTip
                         icon={<MdOutlineArrowOutward fontSize={20} />}
                         tooltipContent="Live"
@@ -63,7 +63,7 @@ export default function ProjectCard({
                         link={githubLink}
                     />
                 </div>
-                <div className="space-y-2 z-20" ref={contentRef}>
+                <div className="space-y-2" ref={contentRef}>
                     <h1 className="text-lg md:text-2xl">{title}</h1>
                     <BadgeList badges={badges} />
                     <p className="text-sm md:text-base">{description}</p>
