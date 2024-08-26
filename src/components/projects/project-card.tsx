@@ -52,7 +52,7 @@ export default function ProjectCard({
                 )}
                 ref={cardRef}
             >
-                <div className="space-x-2">
+                <div className="space-x-2 z-20">
                     <CustomToolTip
                         icon={<MdOutlineArrowOutward fontSize={20} />}
                         tooltipContent="Live"
