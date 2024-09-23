@@ -54,9 +54,13 @@ export const content = [
             </div>
         ),
         content: (
-            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-                Version control
-            </div>
+            <Image
+                src="/about-me-1.jpg"
+                width={300}
+                height={300}
+                className="h-full w-full object-cover"
+                alt="linear board demo"
+            />
         ),
     },
     {
@@ -73,9 +77,13 @@ export const content = [
             </div>
         ),
         content: (
-            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-                Running out of content
-            </div>
+            <Image
+                src="/about-me-2.jpg"
+                width={300}
+                height={300}
+                className="h-full w-full object-cover"
+                alt="linear board demo"
+            />
         ),
     },
 ]
