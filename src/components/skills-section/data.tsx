@@ -1,5 +1,5 @@
 import { RiNextjsLine, RiTailwindCssFill } from 'react-icons/ri'
-import { SiExpress, SiSpringboot } from 'react-icons/si'
+import { SiExpress, SiSocketdotio, SiSpringboot } from 'react-icons/si'
 import { DiMysql } from "react-icons/di";
 import { FaDocker, FaGithub, FaLinux, FaReact, FaVuejs } from 'react-icons/fa'
 import { CardData } from '@/types/type'
@@ -29,6 +29,11 @@ export const cardData: CardData[] = [
         title: 'Express.js',
         icon: <SiExpress />,
         tipContent: 'Node.js framework for building Backend applications',
+    },
+    {
+        title: 'Socket.io',
+        icon: <SiSocketdotio />,
+        tipContent: 'Real-time, bidirectional and event-based communication',
     },
     {
         title: 'SQL',

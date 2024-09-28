@@ -2,6 +2,7 @@ import AboutMe from '@/components/about-me/about-me'
 import HeroBanner from '@/components/hero/hero-banner'
 import Projects from '@/components/projects/projects'
 import SkillSection from '@/components/skills-section/skills'
+import TeachingSection from '@/components/teaching/teaching'
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
                 <HeroBanner />
                 <SkillSection />
                 <AboutMe />
+                <TeachingSection />
                 <Projects />
             </main>
         </>
