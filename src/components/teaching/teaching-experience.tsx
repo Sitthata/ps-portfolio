@@ -85,7 +85,7 @@ const items = [
             'Teaching fundamental web development concepts including HTML, CSS, and JavaScript.',
         header: <HeaderImage url="/teaching/teach-3.jpg" imagePosition='center'/>,
         className: 'md:col-span-1',
-        icon: <p className="text-xs font-extralight">10-12</p>,
+        icon: <p className="text-xs font-extralight">July 24-26, 2024</p>,
     },
     {
         title: 'Hello-Goose React Bootcamp',
@@ -93,6 +93,6 @@ const items = [
             'A React-focused bootcamp guiding students through frontend development and project creation.',
         header: <HeaderImage url="/teaching/teach-5.jpg" imagePosition='center'/>,
         className: 'md:col-span-2',
-        icon: <p className="text-xs font-extralight">10-12</p>,
+        icon: <p className="text-xs font-extralight">15 Nov - 9 Dec, 2023</p>,
     },
 ]
