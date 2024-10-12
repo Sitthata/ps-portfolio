@@ -30,8 +30,9 @@ const config = {
         "planet-side-app": "url('/planet-side-app.png')",
       },
       fontFamily: {
-        sans: ["var(--font-kanit)", ...fontFamily.sans],
-        jetbrain: ["JetBrains Mono", ...fontFamily.mono],
+        // sans: ["var(--font-kanit)", ...fontFamily.sans],
+        kanit: ["var(--font-kanit)", ...fontFamily.sans],
+        jetbrain: ["JetBrains Mono", ...fontFamily.mono]
       },
       colors: {
         border: "hsl(var(--border))",
