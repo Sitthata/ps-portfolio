@@ -6,7 +6,6 @@ import {
     CardTitle,
 } from '@/components/ui/card'
 import { kanit } from '@/fonts'
-import test from 'node:test'
 
 export default function StudentTestimonial() {
     return (
